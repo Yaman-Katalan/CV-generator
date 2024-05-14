@@ -72,3 +72,6 @@ def merge(template, user_inputs):
 
 z = merge(x, all_parts)
 print(z)
+
+with open("output.txt", 'w') as output:
+    output.write(z)
