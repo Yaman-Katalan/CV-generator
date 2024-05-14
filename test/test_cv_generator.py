@@ -3,7 +3,7 @@ from cv_generator.cv_generator import read_template, parse_template, merge
 
 
 def test_read_template_returns_stripped_string():
-    actual = read_template("assets/cv_template.txt")
+    actual = read_template("./assets/personal_summary.txt")
     expected = "I'm {Name} and I have Bachelor's degree in {major} and Currently working as a {job_title}  -  at {company_name}."
     assert actual == expected
 
